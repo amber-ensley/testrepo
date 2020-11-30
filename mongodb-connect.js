@@ -2,7 +2,7 @@ const { MongoClient } = require("mongodb");
 
 MongoClient.connect("mongodb://localhost:27017", (err, client) => {
     const fedDb = "fed2010FirstDb";
-    const db = client.db(fedDb);
+    const db = client.db(fedDb)
 
     if(err){
         console.log("Unable to reach MongoDB server")
